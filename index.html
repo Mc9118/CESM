@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Institute of Technology Gopeshwar | Events</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <span class="logo-emoji">🎓</span>
+      <div class="site-title">
+        <div class="small">College Event Management System</div>
+        <div class="big">Institute of Technology, Gopeshwar</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#events">Events</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button class="btn small ghost" id="nav-register">Register</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Welcome to <span class="hero-highlight">ITG Events Portal</span></h1>
+        <p>Discover all upcoming college events — technical, cultural, and sports. Register easily and stay updated.</p>
+        <div class="hero-cta">
+          <button class="btn primary" id="browse-btn">Browse Events</button>
+          <button class="btn outline" id="create-btn">Create Event</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- UPCOMING EVENTS -->
+    <section id="events" class="events-section">
+      <h2>Upcoming Events</h2>
+      <p class="lead">All live events happening at Institute of Technology, Gopeshwar</p>
+
+      <div class="event-grid" id="event-grid">
+        <!-- JS populates event cards here -->
+      </div>
+      <!-- ADD EVENT FORM -->
+<section class="add-event">
+  <h2>Add New Event</h2>
+  <form id="add-event-form">
+    <input type="text" id="event-name" placeholder="Event Name" required>
+    <input type="text" id="event-date" placeholder="Event Date (e.g., 15 Jan 2026)" required>
+    <input type="text" id="event-venue" placeholder="Venue" required>
+    <input type="text" id="event-type" placeholder="Type (e.g., Cultural, Technical)" required>
+    <textarea id="event-desc" placeholder="Short Description" required></textarea>
+    <button type="submit" class="btn primary">Add Event</button>
+  </form>
+</section>
+
+
+      <!-- registrations preview -->
+      <div class="registrations" id="registrations">
+        <h3>Recent Registrations</h3>
+        <div id="reg-list">No registrations yet.</div>
+      </div>
+    </section>
+
+    <!-- ABOUT (simple) -->
+    <section id="about" class="info">
+      <h3>About</h3>
+      <p>Event portal built for students and organizers to manage and register for college events.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="info">
+      <h3>Contact</h3>
+      <p>For any queries, contact the event coordinator at <strong>mayankchaudhary9118@gmail.com</strong></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2025 Institute of Technology, Gopeshwar — Designed by Mayank
+  </footer>
+
+  <!-- REGISTER MODAL -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close">✕</button>
+      <h3 id="modal-title">Register for Event</h3>
+      <!-- REGISTER MODAL -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close">✕</button>
+      <h3 id="modal-title">Register for Event</h3>
+
+      <form id="reg-form">
+        <input type="text" id="fullname" placeholder="Full name" required>
+        <input type="text" id="roll" placeholder="Roll number / ID" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="hidden" id="event-name">
+        <div class="form-row">
+          <button class="btn primary" type="submit">Submit Registration</button>
+          <button class="btn ghost" type="button" id="modal-cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <section class="reset-section">
+  <button id="reset-events" class="btn ghost">🔁 Reset All Events</button>
+</section>
+
+
+      <form id="reg-form">
+        <input type="text" id="fullname" placeholder="Full name" required>
+        <input type="text" id="roll" placeholder="Roll number / ID" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="hidden" id="event-name">
+        <div class="form-row">
+          <button class="btn primary" type="submit">Submit Registration</button>
+          <button class="btn ghost" type="button" id="modal-cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <section class="reset-section">
+  <button id="reset-events" class="btn ghost">🔁 Reset All Events</button>
+</section>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
